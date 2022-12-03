@@ -1,4 +1,3 @@
-
 /**
  * A class that defines a point in 2D space
  */
@@ -17,34 +16,34 @@ class Point {
   /**
    * Given two Points, add the two together to form a new Point
    *
-   * @param {Point} Point1
-   * @param {Point} Point2
+   * @param {Point} point1
+   * @param {Point} point2
    * @returns {Point}
    */
-  static add (Point1, Point2) {
-    return new Point(Point1.x + Point2.x, Point1.y + Point2.y);
+  static add (point1, point2) {
+    return new Point(point1.x + point2.x, point1.y + point2.y);
   }
 
   /**
    * Given two points, subtract the second point from the first
    *
-   * @param {Point} Point1
-   * @param {Point} Point2
+   * @param {Point} point1
+   * @param {Point} point2
    * @returns {Point}
    */
-  static subtract (Point1, Point2) {
-    return new Point(Point1.x - Point2.x, Point1.y - Point2.y);
+  static subtract (point1, point2) {
+    return new Point(point1.x - point2.x, point1.y - point2.y);
   }
 
   /**
    * Takes two points and gives the absolute distance between them
    *
-   * @param {Point} Point1
-   * @param {Point} Point2
+   * @param {Point} point1
+   * @param {Point} point2
    * @returns {Number}
    */
-  static distanceBetween (Point1, Point2) {
-    return Math.sqrt(Math.pow(Point2.x - Point1.x, 2) + Math.pow(Point2.y - Point1.y, 2));
+  static distanceBetween (point1, point2) {
+    return Math.sqrt(Math.pow(point2.x - point1.x, 2) + Math.pow(point2.y - point1.y, 2));
   }
 };
 
